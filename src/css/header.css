@@ -1,0 +1,75 @@
+.header {
+  padding: 1.5rem 2rem;
+}
+
+.header.with-background {
+  height: 100vh;
+  background: url('/src/assets/images/background.jpg') center/cover no-repeat;
+}
+
+.header__nav ul li a {
+  color: #fff;
+}
+
+.header.dark-text ul li a {
+  color: #04373b;
+}
+
+.header.dark-text .button {
+  color: #04373b;
+}
+
+.header__logo .logo-dark {
+  display: none;
+}
+
+.header__logo .logo-light {
+  display: block;
+}
+
+.header.dark-text .header__logo .logo-dark {
+  display: block;
+}
+
+.header.dark-text .header__logo .logo-light {
+  display: none;
+}
+
+.header__nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4rem;
+}
+
+.header__nav ul li {
+  font-size: 2.4rem;
+}
+
+.header__logo {
+  margin-right: 24rem;
+}
+
+.button {
+  margin-left: 24rem;
+}
+
+.header__nav ul li {
+  position: relative;
+  font-size: 2.4rem;
+}
+
+.header__nav ul li::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0567fc;
+  transition: width 0.3s ease;
+}
+
+.header__nav ul li:hover::after {
+  width: 100%;
+}
